@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+<img src="/html/images/a22.jpeg">
+    <script type="text/javascript">
+      function matchpass() {
+        var firstpassword = document.f1.password.value;
+        var secondpassword = document.f1.password2.value;
+
+        if (firstpassword == secondpassword) {
+          window.location.href = "hotel.html"; // Redirect to the hotel home.html page
+          return true;
+        } else {
+          alert("Incorrect password!");
+          return false;
+        }
+      }
+    </script>
+
+    <style>
+        .img{
+            max-width: 100%;
+            max-height: 100%;
+            width:100%;
+        }
+      .vc {
+        max-width: 50%;
+        width: 100%;
+        padding: 20px 20px;
+        margin-top: 10%;
+      }
+      .er {
+        max-width: 50%;
+        height: 50%;
+      }
+      font {
+        background-color: chartreuse;
+      }
+      .bv {
+        background-color: chartreuse;
+        padding: 2px 2px;
+        width: 10%;
+      }
+      fieldset {
+        background-color: grey;
+        margin-left: 350px;
+        left: 10px;
+        margin-top: 15%;
+      }
+      body
+      {
+        background-image: url("xz1.jpg");
+      }
+    </style>
+    
+  </head>
+  <body>
+  
+
+    <fieldset class="er">
+        background-color="red"
+      <form
+        class="bn"
+        name="f1"
+        action="hotel.html"
+        onsubmit="return matchpass()"
+      >
+        Login ID :<input type="name" name="Dharma" class="vc" /><br />
+        Password:<input type="password" name="321456" class="vc" /><br />
+        Re-enter Password:<input
+          type="password"
+          name="password2"
+          class="vc"
+        /><br />
+        <input type="submit" class="bv" />
+      </form>
+    </fieldset>
+   </body>
+</html>
